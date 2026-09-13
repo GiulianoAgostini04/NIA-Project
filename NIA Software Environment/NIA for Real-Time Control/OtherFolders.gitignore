@@ -1,0 +1,11 @@
+# vitual Environment
+bci_env/
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Output of build/packaging
+build/
+dist/
+*.egg-info/
