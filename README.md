@@ -1,5 +1,5 @@
 # NIA-Project
-## Title:
+### Title:
 Realisation of an Integrated Digital Environment for Human-Machine Interaction in Brain-Computer Interfaces
 
 ## Subtitle:
