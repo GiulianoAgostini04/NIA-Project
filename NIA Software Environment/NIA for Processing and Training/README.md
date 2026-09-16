@@ -1,6 +1,6 @@
 # NIA BCI for Processing And Training
 
-MATLAB (App Designer) application for offline EEG signal processing and training, part of the **NIA – Non-Invasive and Adaptable BCI System**.
+MATLAB application for EEG signal processing and training, part of the **NIA Project**.
 
 ## Contents of this folder
 
