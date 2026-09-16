@@ -42,6 +42,3 @@ To use the application without installing MATLAB:
 - OpenBCI Ganglion, 4 channels, 200 Hz, native Bluetooth connection
 - Electrodes: Cz, C1, C3, FC3; bilateral auricular reference
 
----
-
-Part of the master's thesis project **NIA (Non-Invasive and Adaptable BCI System)**, Politecnico di Torino.
