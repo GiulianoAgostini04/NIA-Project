@@ -1,15 +1,10 @@
 # NIA for Real-Time Control
 
-Python application for real-time EEG-based cursor control, developed as part of the NIA (Non-Invasive and Adaptable BCI System) project. This module performs live acquisition, feature extraction, and motor imagery classification, translating the results into cursor movements on screen.
+Python application for real-time EEG-based cursor control, developed as part of the NIA project. This module performs live acquisition, feature extraction, and motor imagery classification, translating the results into cursor movements on screen.
 
 ## Overview
 
 The application uses EEG signals from the primary motor cortex to control a computer cursor via a four-class motor imagery paradigm (up / down / left / right), based on ERD/ERS analysis in the mu band (8–13 Hz).
-
-## Hardware requirements
-
-- **Board:** OpenBCI Ganglion (4 channels, 200 Hz), connected via Bluetooth native (`GANGLION_NATIVE_BOARD`), no BLED112 dongle required.
-- **Electrode placement:** active electrodes at Cz, C1, C3, FC3 (primary motor cortex); REF and GND on the earlobes (bilateral), channel switches SW1–SW4 set to DOWN.
 
 ## Repository contents
 
@@ -29,7 +24,7 @@ This repository intentionally does not include the Python virtual environment (`
 
 ## Getting the compiled application
 
-A ready-to-use standalone executable (no Python installation required) is published in the [Releases](../../releases) section of this repository. Download the latest `NIA BCI for Real-Time Control` release, extract the archive, and run the `.exe` found inside — no environment setup needed. See "Running the application" below for the required calibration → cursor control order.
+A ready-to-use standalone executable (no Python installation required) is published in the Releases section of this repository. Download the latest `NIA BCI for Real-Time Control` release, extract the archive, and run the `.exe` found inside — no environment setup needed. See "Running the application" below for the required calibration → cursor control order.
 
 ## Environment setup (for running from source)
 
@@ -69,13 +64,4 @@ The executable is built with PyInstaller using the provided specification file:
 ```
 pyinstaller main.spec
 ```
-This regenerates the `build/` and `dist/` folders locally; the resulting `dist/main.exe` is not tracked in this repository — it is instead attached to the corresponding [Release](../../releases).
-
-## Known issues
-
-- The Ganglion board does not support simultaneous Bluetooth sessions; connection status is handled reactively rather than through a background connection checker.
-- Auricular reference/ground electrodes may introduce ECG contamination into the recorded signal.
-
----
-
-Part of the master's thesis project **NIA (Non-Invasive and Adaptable BCI System)**, Politecnico di Torino.
+This regenerates the `build/` and `dist/` folders locally; the resulting `dist/main.exe` is not tracked in this repository — it is instead attached to the corresponding Release.
